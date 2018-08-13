@@ -24,9 +24,22 @@ body {
     align-content: center;
 }
 
-/* p {
-    font-weight: bold
-} */
+h1 {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 header {
     margin: 0 auto;
@@ -329,6 +342,60 @@ img {
 .element:hover {
     opacity: .7;
 }
+
+#img-cover1,#img-cover3,#img-cover5 {
+    -webkit-animation-name: portfolio1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: portfolio1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes portfolio1 {
+    0%   {background-color:#4aaaa5; left:0px; top:10px;}
+    25%  {background-color:rgba(102, 102, 102, 0.5); left:0px; top:92px;}
+    50%  {background-color:rgba(74, 170, 165, 0.5); left:0px; top:10px;}
+    75%  {background-color:#666; left:0px; top:92px;}
+    100% {background-color:#4aaaa5; left:0px; top:10px;}
+}
+
+/* Standard syntax */
+@keyframes portfolio1 {
+    0%   {background-color:#4aaaa5; left:0px; top:10px;}
+    25%  {background-color:rgba(102, 102, 102, 0.5); left:0px; top:92px;}
+    50%  {background-color:rgba(74, 170, 165, 0.5); left:0px; top:10px;}
+    75%  {background-color:#666; left:0px; top:92px;}
+    100% {background-color:#4aaaa5; left:0px; top:10px;}
+}
+
+ #img-cover2,#img-cover4 {
+    -webkit-animation-name: portfolio2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: portfolio2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes portfolio2 {
+    0%   {background-color:#4aaaa5; left:240px; top:-194px;}
+    25%  {background-color:rgba(102, 102, 102, 0.5); left:240px; top:-112px;}
+    50%  {background-color:rgba(74, 170, 165, 0.5); left:240px; top:-194px;}
+    75%  {background-color:#666; left:240px; top:-112px;}
+    100% {background-color:#4aaaa5; left:240px; top:-194px;}
+}
+
+/* Standard syntax */
+@keyframes portfolio2 {
+    0%   {background-color:#4aaaa5; left:240px; top:-194px;}
+    25%  {background-color:rgba(102, 102, 102, 0.5); left:240px; top:-112px;}
+    50%  {background-color:rgba(74, 170, 165, 0.5); left:240px; top:-194px;}
+    75%  {background-color:#666; left:240px; top:-112px;}
+    100% {background-color:#4aaaa5; left:240px; top:-194px;}
+} 
 
 @media screen and (max-width: 980px) {
     /* * {
@@ -775,18 +842,18 @@ img {
     /* Safari 4.0 - 8.0 */
     @-webkit-keyframes portfolio1 {
         0%   {background-color:#4aaaa5; left:10px; top:10px;}
-        25%  {background-color:#666; left:10px; top:135px;}
-        50%  {background-color:#4aaaa5; left:10px; top:10px;}
-        75%  {background-color:#333; left:10px; top:135px;}
+        25%  {background-color:rgba(102, 102, 102, 0.5); left:10px; top:135px;}
+        50%  {background-color:rgba(74, 170, 165, 0.5); left:10px; top:10px;}
+        75%  {background-color:#666; left:10px; top:135px;}
         100% {background-color:#4aaaa5; left:10px; top:10px;}
     }
     
     /* Standard syntax */
     @keyframes portfolio1 {
         0%   {background-color:#4aaaa5; left:10px; top:10px;}
-        25%  {background-color:#666; left:10px; top:135px;}
-        50%  {background-color:#4aaaa5; left:10px; top:10px;}
-        75%  {background-color:#333; left:10px; top:135px;}
+        25%  {background-color:rgba(102, 102, 102, 0.5); left:10px; top:135px;}
+        50%  {background-color:rgba(74, 170, 165, 0.5); left:10px; top:10px;}
+        75%  {background-color:#666; left:10px; top:135px;}
         100% {background-color:#4aaaa5; left:10px; top:10px;}
     }
 
@@ -802,18 +869,20 @@ img {
     /* Safari 4.0 - 8.0 */
     @-webkit-keyframes portfolio2 {
         0%   {background-color:#4aaaa5; left:10px; top:-210px;}
-        25%  {background-color:#666; left:10px; top:-90px;}
-        50%  {background-color:#4aaaa5; left:10px; top:-210px;}
-        75%  {background-color:#333; left:10px; top:-90px;}
+        25%  {background-color:rgba(102, 102, 102, 0.5); left:10px; top:-90px;}
+        50%  {background-color:rgba(74, 170, 165, 0.5); left:10px; top:-210px;}
+        75%  {background-color:#666; left:10px; top:-90px;}
         100% {background-color:#4aaaa5; left:10px; top:-210px;}
     }
     
     /* Standard syntax */
     @keyframes portfolio2 {
         0%   {background-color:#4aaaa5; left:10px; top:-210px;}
-        25%  {background-color:#666; left:10px; top:-90px;}
-        50%  {background-color:#4aaaa5; left:10px; top:-210px;}
-        75%  {background-color:#333; left:10px; top:-90px;}
+        25%  {background-color:rgba(102, 102, 102, 0.5); left:10px; top:-90px;}
+        50%  {background-color:rgba(74, 170, 165, 0.5); left:10px; top:-210px;}
+        75%  {background-color:#666; left:10px; top:-90px;}
         100% {background-color:#4aaaa5; left:10px; top:-210px;}
     }
+
+    
 }
